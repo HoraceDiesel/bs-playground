@@ -7,3 +7,12 @@
 .services section {
   text-align: center;
 }
+
+@media(min-width: 1200px) {
+	.services section {
+		text-align: left;
+	}
+	.services section h3 {
+		margin-top: 0;
+	}
+}
