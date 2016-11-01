@@ -1,92 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/styles.css">
-  <title>Bootstrap</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<title>Bootstrap</title>
 </head>
 <body>
 
-<div class="services container">
-  <h2>Services</h2>
-  <!-- Use one row is enough for layout for similar sections -->
-  <div class="row">
-    <!-- Offset value added to columns at certain breakpoint, do not forget to reset at next breakpoint -->
-    <section class="col-xs-offset-3 col-xs-6 col-sm-offset-0 col-md-4 col-sm-6 col-lg-12">
-      <!-- Nesting columns by creating a row inside, thus a new 12 column grid is created -->
-      <div class="row">
-        <div class="col-lg-1 col-lg-offset-3">
-          <img class="icon" src="images/icon-health.svg" alt="Icon">
-        </div>
-        <div class="col-lg-5">
-          <h3>General Health</h3>
-          <p>Wellness and senior exams, ultrasound, x-ray, and dental cleanings are just a few of our general health services. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt neque eu gravida imperdiet. Ut et lacus at tellus hendrerit porttitor. Curabitur suscipit sem nec consectetur pellentesque. Sed fringilla turpis nisl, eu scelerisque dolor sagittis vel. Aenean porttitor, lacus quis vehicula porttitor, risus libero iaculis quam, vitae dictum turpis justo in lorem. Morbi vehicula elit et imperdiet ultrices. Aliquam erat volutpat. Mauris vulputate dui non neque vulputate venenatis. Aenean est erat, facilisis ut tellus et, suscipit maximus tellus.</p>
-        </div>    
-      </div>
-    </section>
+	<div class="container">
+		<div class="row">
 
-    <section class="col-xs-offset-3 col-xs-6 col-sm-offset-0 col-md-4 col-sm-6 col-lg-12">
-      <div class="col-lg-1 col-lg-offset-3">
-        <img class="icon" src="images/icon-exoticpets.svg" alt="Icon">
-      </div>
-      <div class="col-lg-5">
-        <h3>Exotic Pets</h3>
-        <p>We offer specialized care for reptiles, rodents, birds, and other exotic pets. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt neque eu gravida imperdiet. Ut et lacus at tellus hendrerit porttitor. Curabitur suscipit sem nec consectetur pellentesque. Sed fringilla turpis nisl, eu scelerisque dolor sagittis vel. Aenean porttitor, lacus quis vehicula porttitor, risus libero iaculis quam, vitae dictum turpis justo in lorem. Morbi vehicula elit et imperdiet ultrices. Aliquam erat volutpat. Mauris vulputate dui non neque vulputate venenatis. Aenean est erat, facilisis ut tellus et, suscipit maximus tellus.</p>
-      </div>
-    </section>
+			<section class="col-sm-4">
+				<img src="images/drwinthrop.jpg"
+				alt="Dr Winthrop Photo" class="img-rounded img-responsive center-block">
+				<h3>Dr. Winthrop</h3>
+				<p>img-rounded</p>
+				<p>Dr. Winthrop is the guardian of Missy, a three-year old Llaso mix, who he adopted at the shelter. Dr. Winthrop is passionate about spay and neuter and pet adoption, and works tireless hours outside the clinic, performing free spay and neuter surgeries for the shelter.</p>
+			</section>
 
-    <!-- This class is used to clear floating element that affects only at certain viewport width
-    use visible or hide to enable or disable the clearfix effects -->
-    <div class="clearfix visible-sm-block"></div>
+			<section class="col-sm-4">
+				<img src="images/drchase.jpg"
+				alt="Dr Chase Photo" class="img-circle img-responsive center-block">
+				<h3>Dr. Chase</h3>
+				<p>img-circle</p>
+				<p>Dr. Chase spends much of her free time helping the local rescue organization find homes for animals, such as Kibbles - a Maine Coon Cat who is part of the large Chase household, including two dogs, three cats, and a turtle.</p>
+			</section>
 
-    <section class="col-xs-offset-3 col-xs-6 col-sm-offset-0 col-md-4 col-sm-6 col-lg-12">
-      <div class="col-lg-1 col-lg-offset-3">
-        <img class="icon" src="images/icon-grooming.svg" alt="Icon">
-      </div>
-      <div class="col-lg-5">
-        <h3>Grooming</h3>
-        <p>Our therapeutic grooming treatments help battle fleas, allergic dermatitis, and other challenging skin conditions. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt neque eu gravida imperdiet. Ut et lacus at tellus hendrerit porttitor. Curabitur suscipit sem nec consectetur pellentesque. Sed fringilla turpis nisl, eu scelerisque dolor sagittis vel. Aenean porttitor, lacus quis vehicula porttitor, risus libero iaculis quam, vitae dictum turpis justo in lorem. Morbi vehicula elit et imperdiet ultrices. Aliquam erat volutpat. Mauris vulputate dui non neque vulputate venenatis. Aenean est erat, facilisis ut tellus et, suscipit maximus tellus.</p>
-      </div>  
-    </section>
+			<section class="col-sm-4">
+				<img src="images/drsanders.jpg"
+				alt="Dr Sanders Photo" class="img-thumbnail img-responsive center-block">
+				<h3>Dr Sanders</h3>
+				<p>img-thumbnail</p>
+				<p>Leroy walked into Dr. Sanders front door when he was moving into a new house. After searching for weeks for Leroy's guardians, he decided to make Leroy a part of his pet family, and now has three cats.</p>
+			</section>
+		</div><!-- row -->   
 
-    <section class="col-xs-offset-3 col-xs-6 col-sm-offset-0 col-md-4 col-sm-6 col-lg-12">
-      <div class="col-lg-1 col-lg-offset-3">
-        <img class="icon" src="images/icon-nutrition.svg" alt="Icon">
-      </div>
-      <div class="col-lg-5">
-        <h3>Nutrition</h3>
-        <p>Let our nutrition experts review your pet's diet and prescribe a custom nutrition plan for optimum health and disease prevention. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt neque eu gravida imperdiet. Ut et lacus at tellus hendrerit porttitor. Curabitur suscipit sem nec consectetur pellentesque. Sed fringilla turpis nisl, eu scelerisque dolor sagittis vel. Aenean porttitor, lacus quis vehicula porttitor, risus libero iaculis quam, vitae dictum turpis justo in lorem. Morbi vehicula elit et imperdiet ultrices. Aliquam erat volutpat. Mauris vulputate dui non neque vulputate venenatis. Aenean est erat, facilisis ut tellus et, suscipit maximus tellus.</p>
-      </div>
-    </section>
+		<div class="row">
+			<section class="col-xs-12">
+				
+				<!-- Add class pull-left ot pull-right to float the img -->
+				<img class="pull-left" src="images/field_sm.jpg" alt="Dr Winthrop Photo">
+				
+				<!-- Add contextual classes with text- or bg- -->
+				<p class="text-muted"><strong>Muted</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet excepturi et id similique cumque consequatur ea minima quas, esse natus molestiae blanditiis laboriosam atque veritatis. Animi sapiente, ipsa! Cum, ad.</p>
 
-    <section class="col-xs-offset-3 col-xs-6 col-sm-offset-0 col-md-4 col-sm-6 col-lg-12">
-      <div class="col-lg-1 col-lg-offset-3">
-        <img class="icon" src="images/icon-pestcontrol.svg" alt="Icon">
-      </div>
-      <div class="col-lg-5">
-        <h3>Pest Control</h3>
-        <p>We offer the latest advances in safe and effective prevention and treatment of fleas, ticks, worms, heart worm, and other parasites. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt neque eu gravida imperdiet. Ut et lacus at tellus hendrerit porttitor. Curabitur suscipit sem nec consectetur pellentesque. Sed fringilla turpis nisl, eu scelerisque dolor sagittis vel. Aenean porttitor, lacus quis vehicula porttitor, risus libero iaculis quam, vitae dictum turpis justo in lorem. Morbi vehicula elit et imperdiet ultrices. Aliquam erat volutpat. Mauris vulputate dui non neque vulputate venenatis. Aenean est erat, facilisis ut tellus et, suscipit maximus tellus.</p>
-      </div>
-    </section>
+				<p class="text-primary"><strong>Primary</strong> Quas nisi veritatis, placeat quo quidem et aperiam eum, enim in! Accusamus ab, numquam quidem! Nihil blanditiis, libero id qui, asperiores quisquam, expedita vel error molestias sunt nam assumenda unde!</p>
 
-    <section class="col-xs-offset-3 col-xs-6 col-sm-offset-0 col-md-4 col-sm-6 col-lg-12">
-      <div class="col-lg-1 col-lg-offset-3">
-        <img class="icon" src="images/icon-vaccinations.svg" alt="Icon">
-      </div>
-      <div class="col-lg-5">
-        <h3>Vaccinations</h3>
-        <p>Our veterinarians are experienced in modern vaccination protocols that prevent many of the deadliest diseases in pets. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt neque eu gravida imperdiet. Ut et lacus at tellus hendrerit porttitor. Curabitur suscipit sem nec consectetur pellentesque. Sed fringilla turpis nisl, eu scelerisque dolor sagittis vel. Aenean porttitor, lacus quis vehicula porttitor, risus libero iaculis quam, vitae dictum turpis justo in lorem. Morbi vehicula elit et imperdiet ultrices. Aliquam erat volutpat. Mauris vulputate dui non neque vulputate venenatis. Aenean est erat, facilisis ut tellus et, suscipit maximus tellus.</p>
-      </div>
-    </section>   
-  </div><!-- row -->   
-</div><!-- content container -->
+				<p class="text-success"><strong>Success</strong> Amet, pariatur, iusto. Earum illum, eum officia explicabo corporis culpa obcaecati sint totam labore iure, omnis, neque adipisci voluptatem quos aspernatur id. Ut natus harum nulla molestias iste error at.</p>
 
+				<p class="bg-info"><strong>Info</strong> Cupiditate enim aperiam unde ipsa quae vel, labore saepe sapiente? Sed aliquam, aut laborum aliquid odit architecto, labore autem, praesentium repellendus nesciunt accusamus consequuntur fugiat perferendis in animi quisquam. Voluptas?</p>
 
-<script src="js/jquery-2.1.4.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/script.js"></script>
+				<p class="bg-warning"><strong>Warning</strong> Doloremque natus itaque tempore labore repellendus adipisci animi, fuga atque cum ea quos eligendi placeat, facilis saepe. Et temporibus ut sapiente hic ratione, nihil laudantium reprehenderit, alias, ipsam accusantium necessitatibus.</p>
+
+				<p class="bg-danger"><strong>Danger</strong> Adipisci magnam consequuntur reprehenderit minus! Dolorem distinctio laudantium dignissimos placeat, mollitia veniam autem aut ipsa ratione similique in odio aperiam quia vitae ab qui earum amet adipisci! Officiis aliquid, est?</p>
+
+			</section>
+		</div><!-- row -->
+	</div><!-- content container -->
+
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/script.js"></script>
 </body>
 </html>
