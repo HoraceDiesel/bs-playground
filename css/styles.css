@@ -1,18 +1,9 @@
-.icon {
-  max-width: 150px;
-  margin: 0 auto;
-  display: block;
+.form-col-12 {
+	width: 100%;
+	max-width: 720px;
+	margin: 50px auto;
 }
 
-.services section {
-  text-align: center;
-}
-
-@media(min-width: 1200px) {
-	.services section {
-		text-align: left;
-	}
-	.services section h3 {
-		margin-top: 0;
-	}
+.form-inline {
+	text-align: center;
 }
