@@ -1,54 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/styles.css">
-  <title>Bootstrap</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<title>Bootstrap</title>
 </head>
 <body>
 
-<div class="container">
-  <div class="row">
-    <section class="col-xs-12">
+	<div class="container">
+		<div class="row">
+			<section class="col-xs-12">
+				<form class="form-col-12">
+					<h2 class="center-block">05_01-02 Inline form demo with sr-only tags</h2>
+					<div class="form-group">
+						<label for="inputName">Name</label>
+						<input class="form-control" type="text" id="inputName" 
+						placeholder="Name">
+					</div>
+					
+					<div class="form-group">
+						<label for="inputEmail">Email</label>
+						<input class="form-control" type="email" id="inputEmail" 
+						placeholder="Email">
+					</div>
+					
+					<div class="form-group">
+						<label for="selectSite">Site</label>
+						<select class="form-control" id="selectSite">
+							<option>Choose...</option>
+							<option>lynda.com</option>
+							<option>raybo.org</option>
+							<option>iviewsource.com</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="inputAddList">
+							<input id="inputAddList" type="checkbox">
+							Add me to e-mail blast
+						</label>
+					</div>
 
-<form>
-  <label for="inputName">Name</label>
-  <input type="text" id="inputName" 
-    placeholder="Name">
+					<div class="form-group">
+						<label for="inputComments">Comments</label>
+						<textarea class="form-control" id="inputComments"></textarea>
+					</div>
 
-  <label for="inputEmail">Email</label>
-  <input type="email" id="inputEmail" 
-    placeholder="Email">
+					<div class="radio"> 
+						<label>
+							<input name="options" type="radio">
+							One
+						</label>
+					</div>
 
-  <label for="selectSite">Site</label>
-  <select id="selectSite">
-    <option>Choose...</option>
-    <option>lynda.com</option>
-    <option>raybo.org</option>
-    <option>iviewsource.com</option>
-  </select>
+					<div class="radio">
+						<label>
+							<input name="options" type="radio">
+							Two
+						</label>
+					</div>
 
-  <input id="inputAddList" type="checkbox">
-  <label for="inputAddList">
-  Add me to e-mail blast</label>
-
-  <label for="inputComments">Comments</label>
-  <textarea id="inputComments"></textarea>
-
-  <input type="submit" value="submit">
-</form>
+					<input class="btn btn-default"
+					type="submit" value="submit">
+				</form>
 
 
-    </section>
-  </div><!-- row -->   
-</div><!-- content container -->
+			</section>
+		</div><!-- row -->
+	</div>
+	<div class="container">
+		<div class="row">
+			<section class="col-xs-12">
+				<!-- To make the form elements inline displayed, use class form-inline on <form> tag -->
+				<form class="form-inline form-col-12">
+					<h2 class="text-left">05_03 Inline form demo with sr-only tags</h2>
+					<div class="form-group">
+						<label for="inputEmail">
+							Email address
+						</label>
+						<input type="email" class="form-control"
+						id="inputEmail" placeholder="Email">
+					</div>
+
+					<div class="form-group">
+						<label
+						for="inputPassword">Password</label>
+						<input type="password" class="form-control"
+						id="inputPassword" placeholder="Password">
+					</div>
+
+					<button type="submit"
+					class="btn btn-default">Sign in</button>
+
+					<div class="checkbox">
+						<label>
+							<input type="checkbox"> Remember me
+						</label>
+					</div>
+					<div class="form-group">
+						<label for="sr-input" class="sr-only">This is only visible to screen reader</label>
+						<input class="form-control type="text" name="sr-input" placeholder="The label is visible to screen reader only"> 
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<section class="col-xs-12">
+				<div class="form-col-12">
+					<h2 class="center-block">05_04 Horizontal Form</h2>
+					<form class="form-horizontal">
+						<div class="form-group">
+							<label class="col-sm-2 control-label" for="inputName">Name</label>
+							<div class="col-sm-10">	
+								<input class="form-control" type="text"
+								id="inputName" placeholder="Name">
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label class="col-sm-2 control-label" for="inputEmail">Email</label>
+							<div class="col-sm-10">
+								<input class="form-control" type="email"
+								id="inputEmail" placeholder="Email">  
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label class="col-sm-2 control-label" for="selectSite">Site</label>
+							<div class="col-sm-10">
+								<select class="form-control" id="selectSite">
+									<option>Choose...</option>
+									<option>lynda.com</option>
+									<option>raybo.org</option>
+									<option>iviewsource.com</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<div class="col-sm-10 col-sm-offset-2">
+								<div class="checkbox">
+									<label>
+										<input id="inputAddList"
+										type="checkbox">Add me to e-mail blast
+									</label>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label class="col-sm-2 control-label" for="inputComments">Comments</label>
+							<div class="col-sm-10">
+								<textarea class="form-control" 
+								id="inputComments"></textarea>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<div class="col-sm-10 col-sm-offset-2">
+								<input type="submit" class="btn btn-default"  
+								value="submit">
+							</div>
+						</div>
+						
+					</form>
+				</div>
+			</section>
+		</div>   
+	</div><!-- content container -->
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<form class="form-col-12 form-horizontal">
+					<h2 class="center-block">
+						05_05 Validation state
+					</h2>
+
+					<div class="form-group" id="wrapper-input-success">
+						<label class="col-sm-3 control-label" for="inputName-0505">Input with success</label>
+						<div class="col-sm-9">
+							<input class="form-control" type="text" 
+							id="inputName-0505" placeholder="Success">
+						</div>
+						<span id="helpBlock2" class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+					</div>
+
+					<div class="form-group has-warning">
+						<label class="col-sm-3 control-label" for="warning-0505">Input with warning</label>
+						<div class="col-sm-9">
+							<input class="form-control" type="text" 
+							id="warning-0505" placeholder="Warning">
+						</div>
+					</div>
+
+					<div class="form-group has-error">
+						<label class="col-sm-3 control-label" for="error-0505">Input with warning</label>
+						<div class="col-sm-9">
+							<input class="form-control" type="text" 
+							id="error-0505" placeholder="Error">
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<form class="form-col-12">
+					<h2 class="text-left">
+						Using Input Groups
+					</h2>
+					<div class="form-group">
+						<div class="input-group">
+							<span class="input-group-addon">
+								<!-- <span class="glyphicon glyphicon-folder-open"></span> -->
+								<label class="control-label">
+									<input type="checkbox" checked>
+									Start a search?
+								</label>
+							</span>
+							<input class="form-control" type="text" placeholder="Search on this page...">
+							<span class="input-group-btn">
+								<button class="btn btn-default">Search</button>
+							</span>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
 
 
-<script src="js/jquery-2.1.4.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/script.js"></script>
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/script.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('#wrapper-input-success').click(function(){
+				$('#wrapper-input-success').addClass('has-success');
+			});
+		});
+	</script>
 </body>
 </html>
