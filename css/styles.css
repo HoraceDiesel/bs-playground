@@ -1,9 +1,3 @@
-.form-col-12 {
-	width: 100%;
-	max-width: 720px;
-	margin: 50px auto;
-}
-
-.form-inline {
-	text-align: center;
+.section-first {
+	padding-top: 60px;
 }
