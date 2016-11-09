@@ -10,7 +10,7 @@
 </head>
 <body>
 
-	<div class="container">
+	<div class="container section-first">
 		<div class="row">
 			<section class="col-xs-12">				
 				<h2>06_01 Dropdown Demo</h2>
@@ -109,7 +109,15 @@
 			<div class="navbar-header">
 				<a href="#" class="navbar-brand">Website Name</a>
 				<!-- <p class="navbar-text">small brand description</p> -->
-			</div> 
+				<button class="navbar-toggle collapsed"
+				data-toggle="collapse"
+				data-target="#top-menu">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+		</div> 
+		<div class="navbar-collapse collapse" id="top-menu">
 			<ul class="nav navbar-nav">
 				<li><a href="#">Home</a></li>
 				<li class="active"><a href="#">Mission</a></li>
@@ -118,7 +126,9 @@
 				<li><a href="#">Testimonials</a></li>
 			</ul>
 		</div>
-	</nav>
+
+	</div>
+</nav>
 </div>
 <div class="container">
 	<div class="row">
@@ -194,7 +204,15 @@
 	<div class="container">
 		<div class="navbar-header">
 			<a href="#" class="navbar-brand">Forms</a>
-		</div>
+			<button class="navbar-toggle collapsed"
+			data-toggle="collapse"
+			data-target="#dark-menu">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+	</div>
+	<div class="navbar-collapse collapse" id="dark-menu">
 		<ul class="nav navbar-nav">
 			<li><a href="#">Added</a></li>
 			<li class="active"><a href="#">form</a></li>
@@ -209,34 +227,47 @@
 			<button type="submit" class="btn btn-default">Go</button>
 		</form>
 	</div>
+
+</div>
 </nav>
 
 <nav class="navbar navbar-default">
 	<div class="container">
 		<div class="navbar-header">
 			<a href="#" class="navbar-brand">Dropdown</a>
-		</div>
+			<button type="button" class="collapsed navbar-toggle" 
+			data-toggle="collapse"
+			data-target="#collapsemenu">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+	</div>
+	<div class="navbar-collapse collapse" id="collapsemenu">
 		<ul class="nav navbar-nav">
-			<li class="active"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown
-				<span class="caret"></span>
-			</a>
-			<ul class="dropdown-menu">
-				<li><a href="#">Sub Item 1</a></li>
-				<li><a href="#">Sub Item 2</a></li>
-				<li><a href="#">Sub Item 3</a></li>
-				<li><a href="#">Sub Item 4</a></li>
-			</ul>
-		</li>
-		<li><a href="#">into</a></li>
-		<li><a href="#">the</a></li>
-		<li><a href="#">navigation</a></li>
-	</ul>
-	<form class="navbar-form navbar-right">
-		<div class="form-group">
-			<input type="text" class="form-control" placeholder="Search">
-		</div>
-		<button type="submit" class="btn btn-default">Go</button>
-	</form>
+			<li class="active">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown
+					<span class="caret"></span>
+				</a>
+				<ul class="dropdown-menu">
+					<li><a href="#">Sub Item 1</a></li>
+					<li><a href="#">Sub Item 2</a></li>
+					<li><a href="#">Sub Item 3</a></li>
+					<li><a href="#">Sub Item 4</a></li>
+				</ul>
+			</li>
+			<li><a href="#">into</a></li>
+			<li><a href="#">the</a></li>
+			<li><a href="#">navigation</a></li>
+		</ul>
+		<form class="navbar-form navbar-right">
+			<div class="form-group">
+				<input type="text" class="form-control" placeholder="Search">
+			</div>
+			<button type="submit" class="btn btn-default">Go</button>
+		</form>
+	</div>
+
 </div>
 </nav>
 
@@ -246,6 +277,63 @@
 			<p>Wisdom Pet Medicine strives to blend the best in traditional and alternative medicine in the diagnosis and treatment of companion animals including dogs, cats, birds, reptiles, rodents, and fish. We apply the wisdom garnered in the centuries old tradition of veterinary medicine, to find the safest treatments and cures.</p>
 
 			<p>We strive to be your pet's medical experts from youth through the senior years. We build preventative health care plans for each and every one of our patients, based on breed, age, and sex, so that your pet receives the most appropriate care at crucial milestones. We want to give your pet a long and healthy life.</p>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12">
+			<h2>06_06 Using breadcrumbs and pagination styles</h2>
+			<h3>Breadcrumbs</h3>
+			<ol class="breadcrumb">
+				<li>
+					<a href="#">Top</a>
+				</li>
+				<li>
+					<a href="#">Parent Level</a>
+				</li>
+				<li>
+					<a href="#">Child Level</a>
+				</li>
+				<li>
+					<a href="#">Grandchild Level</a>
+				</li>
+			</ol>
+			<h3>Pagers</h3>
+			<!-- <nav> -->
+				<ul class="pager">
+					<li class="previous">
+						<a href="#"><span aria-hidden="true">&larr;</span> Previous</a>
+					</li>
+					<li class="next">
+						<a href="#"><span aria-hidden="true">&rarr;</span> Next</a>
+					</li>
+				</ul>
+			<!-- </nav> -->
+			<h3>Navigation</h3>
+			<nav class="text-center">
+				<ul class="pagination">
+					<li>
+					<a href="#" aria-label="Previous"><span>&laquo;</span></a>
+					</li>
+					<li>
+						<a href="#">1</a>
+					</li>
+					<li>
+						<a href="#">2</a>
+					</li>
+					<li>
+						<a href="#">3</a>
+					</li>
+					<li>
+						<a href="#">4</a>
+					</li>
+					<li>
+						<a href="#" aria-label="Next"><span>&raquo;</span></a>
+					</li>
+				</ul>
+			</nav>
 		</div>
 	</div>
 </div>
